@@ -110,6 +110,20 @@
 										http://tmp.link/f/5ff7bda6af6ab
 									</td>
 								</tr>
+								
+								<tr v-for="mir in filteredMirrorList" :class="['row', 'status-'+mir.status]" :key="mir.name">
+									<td class="col-md-8">
+										<a class="mirror-item-label"  data-toggle="popover" data-trigger="hover" data-placement="right" 
+											:data-content="mir.description" :href="getURL(mir)" :aria-label="mir.name + ', ' + mir.description">
+											  SenrenBanka_Steam_Patch_v101.7z 
+											<span class="label label-new" v-if='mir.is_new'>new</span>
+											<a v-if='mir.help_url' :href="mir.help_url"><i aria-hidden="true" class="fa fa-question-circle" title="Help"></i><span class="sr-only">[Help]</span></a>
+										</a>
+									</td>
+									<td class="col-md-4">
+										http://tmp.link/f/6004f876093c1
+									</td>
+								</tr>
 							</tbody>
 						</table>
 						
