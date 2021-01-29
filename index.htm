@@ -85,7 +85,20 @@
 									<td class="col-md-8">
 										<a class="mirror-item-label"  data-toggle="popover" data-trigger="hover" data-placement="right" 
 											:data-content="mir.description" :href="getURL(mir)" :aria-label="mir.name + ', ' + mir.description">
-											nekopara_vol3_Steam_R18DLC.rar
+											patchCN.zip-943980
+										<span class="label label-new" v-if='mir.is_new'>R18</span>
+											<a v-if='mir.help_url' :href="mir.help_url"><i aria-hidden="true" class="fa fa-question-circle" title="Help"></i><span class="sr-only">[Help]</span></a>
+										</a>
+									</td>
+									<td class="col-md-4">
+										http://tmp.link/f/60128adfdb1ac
+									</td>
+								</tr>
+								<tr v-for="mir in filteredMirrorList" :class="['row', 'status-'+mir.status]" :key="mir.name">
+									<td class="col-md-8">
+										<a class="mirror-item-label"  data-toggle="popover" data-trigger="hover" data-placement="right" 
+											:data-content="mir.description" :href="getURL(mir)" :aria-label="mir.name + ', ' + mir.description">
+											nekopara_vol3_Steam_R18DLC.rar-602520
 										<span class="label label-new" v-if='mir.is_new'>R18</span>
 											<a v-if='mir.help_url' :href="mir.help_url"><i aria-hidden="true" class="fa fa-question-circle" title="Help"></i><span class="sr-only">[Help]</span></a>
 										</a>
@@ -99,7 +112,7 @@
 									<td class="col-md-8">
 										<a class="mirror-item-label"  data-toggle="popover" data-trigger="hover" data-placement="right" 
 											:data-content="mir.description" :href="getURL(mir)" :aria-label="mir.name + ', ' + mir.description">
-											nekopara_vol2_Steam_R18Patch.zip
+											nekopara_vol2_Steam_R18Patch.zip-420110
 										<span class="label label-new" v-if='mir.is_new'>R18</span>
 											<a v-if='mir.help_url' :href="mir.help_url"><i aria-hidden="true" class="fa fa-question-circle" title="Help"></i><span class="sr-only">[Help]</span></a>
 										</a>
@@ -113,7 +126,7 @@
 									<td class="col-md-8">
 										<a class="mirror-item-label"  data-toggle="popover" data-trigger="hover" data-placement="right" 
 											:data-content="mir.description" :href="getURL(mir)" :aria-label="mir.name + ', ' + mir.description">
-											NEKOPARA vol.1 18x.rar
+											NEKOPARA vol.1 18x.rar-333600
 										<span class="label label-new" v-if='mir.is_new'>R18</span>
 											<a v-if='mir.help_url' :href="mir.help_url"><i aria-hidden="true" class="fa fa-question-circle" title="Help"></i><span class="sr-only">[Help]</span></a>
 										</a>
@@ -127,7 +140,7 @@
 									<td class="col-md-8">
 										<a class="mirror-item-label"  data-toggle="popover" data-trigger="hover" data-placement="right" 
 											:data-content="mir.description" :href="getURL(mir)" :aria-label="mir.name + ', ' + mir.description">
-											NEKOPARA vol. 4_steamR18DLC补丁.zip 
+											NEKOPARA vol. 4_steamR18DLC.zip-1406990
 											<span class="label label-new" v-if='mir.is_new'>R18</span>
 											<a v-if='mir.help_url' :href="mir.help_url"><i aria-hidden="true" class="fa fa-question-circle" title="Help"></i><span class="sr-only">[Help]</span></a>
 										</a>
@@ -141,7 +154,7 @@
 									<td class="col-md-8">
 										<a class="mirror-item-label"  data-toggle="popover" data-trigger="hover" data-placement="right" 
 											:data-content="mir.description" :href="getURL(mir)" :aria-label="mir.name + ', ' + mir.description">
-											  SenrenBanka_Steam_Patch_v101.7z 
+											  SenrenBanka_Steam_Patch_v101.7z-1144400
 											<span class="label label-new" v-if='mir.is_new'>R18</span>
 											<a v-if='mir.help_url' :href="mir.help_url"><i aria-hidden="true" class="fa fa-question-circle" title="Help"></i><span class="sr-only">[Help]</span></a>
 										</a>
@@ -155,7 +168,7 @@
 									<td class="col-md-8">
 										<a class="mirror-item-label"  data-toggle="popover" data-trigger="hover" data-placement="right" 
 											:data-content="mir.description" :href="getURL(mir)" :aria-label="mir.name + ', ' + mir.description">
-											White_Wings_patch1.0_2.zip 
+											White_Wings_patch1.0_2.zip-1185680
 											<span class="label label-new" v-if='mir.is_new'>R18</span>
 											<a v-if='mir.help_url' :href="mir.help_url"><i aria-hidden="true" class="fa fa-question-circle" title="Help"></i><span class="sr-only">[Help]</span></a>
 										</a>
@@ -169,7 +182,7 @@
 								<td class="col-md-8">
 									<a class="mirror-item-label"  data-toggle="popover" data-trigger="hover" data-placement="right" 
 										:data-content="mir.description" :href="getURL(mir)" :aria-label="mir.name + ', ' + mir.description">
-										  tsuki_patch_sc.7z  
+										  tsuki_patch_sc.7z-1069230
 											<span class="label label-new" v-if='mir.is_new'>R18</span>
 											<a v-if='mir.help_url' :href="mir.help_url"><i aria-hidden="true" class="fa fa-question-circle" title="Help"></i><span class="sr-only">[Help]</span></a>
 										</a>
