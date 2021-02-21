@@ -86,16 +86,29 @@
 									<td class="col-md-8">
 										<a class="mirror-item-label"  data-toggle="popover" data-trigger="hover" data-placement="right" 
 											:data-content="mir.description" :href="getURL(mir)" :aria-label="mir.name + ', ' + mir.description">
+											maitetsu_lastrun_extra_patch_v1.2.7z-1434480
+										<span class="label label-new" v-if='mir.is_new'>R18</span>
+											<a v-if='mir.help_url' :href="mir.help_url"><i aria-hidden="true" class="fa fa-question-circle" title="Help"></i><span class="sr-only">[Help]</span></a>
+										</a>
+									</td>
+									<td class="col-md-4">
+										http://tmp.link/f/603222b628eab
+									</td>
+								</tr>
+								<tr v-for="mir in filteredMirrorList" :class="['row', 'status-'+mir.status]" :key="mir.name">
+									<td class="col-md-8">
+										<a class="mirror-item-label"  data-toggle="popover" data-trigger="hover" data-placement="right" 
+											:data-content="mir.description" :href="getURL(mir)" :aria-label="mir.name + ', ' + mir.description">
 											Maitetsu 18+ Steam Restoration Patch 1.3.zip-880950
 										<span class="label label-new" v-if='mir.is_new'>R18</span>
 											<a v-if='mir.help_url' :href="mir.help_url"><i aria-hidden="true" class="fa fa-question-circle" title="Help"></i><span class="sr-only">[Help]</span></a>
 										</a>
 									</td>
 									<td class="col-md-4">
-										http://tmp.link/f/6013bffcd562f
+										http://tmp.link/f/6032144364832
 									</td>
 								</tr>
-							<tbody>
+
 								<tr v-for="mir in filteredMirrorList" :class="['row', 'status-'+mir.status]" :key="mir.name">
 									<td class="col-md-8">
 										<a class="mirror-item-label"  data-toggle="popover" data-trigger="hover" data-placement="right" 
